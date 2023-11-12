@@ -1,10 +1,12 @@
 .compat-item h4 {
     font-weight: bolder;
+    color: white;
 }
 
 .maskfa {
     height: 50px;
     width: 50px;
+    color: white;
 }
 
 .lefter {
@@ -12,19 +14,22 @@
 }
 
 .compat-item {
-    width: 25%;
+    min-width: 150px;
+    max-width: 240px;
     text-align: center;
-    border: 1px solid;
     border-radius: 25px;
+    border: 1px solid white;
+    margin-top: 10px;
 }
 
 .all-compat {
-    display: flex;
     margin-top: 10px;
+    display: flex;
     width: 100%;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 15);
 }
 
-.lower-compat {
-    
+.compat-item p {
+    color: white;
 }
-

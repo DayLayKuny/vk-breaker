@@ -1,6 +1,7 @@
 import LeftMenu from "../left-menu/LeftMenu";
 import "./AppHeader.css";
 
+
 function AppHeader() {
   return (
     <div className="all-header">

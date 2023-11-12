@@ -25,10 +25,10 @@
 }
 
 .info-div {
-    display: flex;
-    gap: 15px;
-    height: 100%;
-    align-items: center;
+  display: flex;
+  gap: 15px;
+  height: 100%;
+  align-items: center;
 }
 
 .login-div button {
@@ -43,4 +43,10 @@
   border-radius: 25px;
   height: 45px;
   width: 200px;
+}
+@media screen and (max-width: 991px) {
+  .info-div,
+  .login-div {
+    display: none;
+  }
 }

@@ -4,12 +4,12 @@
 	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
 <style type="text/css">
 	.st0{opacity:0.932;fill-rule:evenodd;clip-rule:evenodd;fill:#8926DC;enable-background:new    ;}
-	.st1{opacity:0.88;fill-rule:evenodd;clip-rule:evenodd;enable-background:new    ;}
-	.st2{opacity:0.892;fill-rule:evenodd;clip-rule:evenodd;enable-background:new    ;}
-	.st3{opacity:0.909;fill-rule:evenodd;clip-rule:evenodd;enable-background:new    ;}
-	.st4{opacity:0.899;fill-rule:evenodd;clip-rule:evenodd;enable-background:new    ;}
-	.st5{opacity:0.923;fill-rule:evenodd;clip-rule:evenodd;enable-background:new    ;}
-	.st6{opacity:0.897;fill-rule:evenodd;clip-rule:evenodd;enable-background:new    ;}
+	.st1{opacity:0.88;fill-rule:evenodd;clip-rule:evenodd;fill: #fff;    ;}
+	.st2{opacity:0.892;fill-rule:evenodd;clip-rule:evenodd;fill: #fff;   ;}
+	.st3{opacity:0.909;fill-rule:evenodd;clip-rule:evenodd;fill: #fff;    ;}
+	.st4{opacity:0.899;fill-rule:evenodd;clip-rule:evenodd;fill: #fff;    ;}
+	.st5{opacity:0.923;fill-rule:evenodd;clip-rule:evenodd;fill: #fff;    ;}
+	.st6{opacity:0.897;fill-rule:evenodd;clip-rule:evenodd;fill: #fff;}
 	.st7{opacity:0.916;fill-rule:evenodd;clip-rule:evenodd;fill:#8926DC;enable-background:new    ;}
 </style>
 <g>

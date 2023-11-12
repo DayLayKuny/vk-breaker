@@ -1,0 +1,24 @@
+.all-header {
+    width: 100%;
+}
+
+.downstream-header {
+    display: flex;
+    padding: 0px  20px;
+}
+
+.info-div a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.info-div {
+    margin-top: 8px;
+    padding: 0 10%;
+}
+
+.login-div {
+    margin-top: 8px;
+    margin-right: 3%;
+}

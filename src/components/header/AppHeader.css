@@ -7,18 +7,37 @@
     padding: 0px  20px;
 }
 
+.logo-div {
+    margin-top: 0.8%;
+    margin-left: 3%;
+}
+
 .info-div a{
     text-decoration: none;
     color: black;
-    
+    margin-left: 10px;
 }
 
 .info-div {
-    margin-top: 8px;
-    padding: 0 10%;
+    margin-top: 1.5%;
+    padding: 0 5%;
 }
 
 .login-div {
-    margin-top: 8px;
-    margin-right: 3%;
+    margin-top: 0.6%;
+}
+
+.login-div button {
+    padding: 5px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    border: thick double;
+}
+
+.login-div button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
 }

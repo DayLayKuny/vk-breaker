@@ -7,7 +7,24 @@
     width: 50px;
 }
 
-.compat-item1 {
+.lefter {
+    margin-left: 1%;
+}
+
+.compat-item {
     width: 25%;
     text-align: center;
+    border: 1px solid;
+    border-radius: 25px;
 }
+
+.all-compat {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.lower-compat {
+    
+}
+

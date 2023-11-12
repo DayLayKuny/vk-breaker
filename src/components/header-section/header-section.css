@@ -1,7 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 .header-section {
-    height: 50vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../../img/Desktop1.png);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../img/Desktop1.png);
+}
+.header-section-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.header {
+  font-size: 50px;
+  font-family: "Press Start 2P";
+}
+.texts {
+  max-width: 600px;
+}
+@media screen and (max-width: 782px) {
+  .header {
+    font-size: 35px;
+  }
 }

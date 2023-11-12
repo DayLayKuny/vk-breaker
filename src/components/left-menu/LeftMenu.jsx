@@ -3,6 +3,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "./left-menu.css";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const LeftMenu = () => {
   const [show, setShow] = useState(false);
@@ -12,16 +13,23 @@ const LeftMenu = () => {
   return (
     <>
       <Button variant="primary" onClick={handleShow} id="menu-open-btn">
-        Launch
+        <AiOutlineMenu />
       </Button>
 
       <Offcanvas show={show} onHide={handleClose} id="menu">
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        <Offcanvas.Header>
+          <button onClick={() => handleClose()} className="close-btn">
+            <AiOutlineClose />
+          </button>
         </Offcanvas.Header>
-        <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+        <Offcanvas.Body id="menu-body">
+          <div className="left-menu-links">
+            <a href="#">Отзывы</a>
+            <a href="#">Блог</a>
+            <a href="#">Политика Конфиденциальности</a>
+            <a href="#">О Нас </a>
+            <a href="#">Контакты</a>
+          </div>
         </Offcanvas.Body>
       </Offcanvas>
     </>

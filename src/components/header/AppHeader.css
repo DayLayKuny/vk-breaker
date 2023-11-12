@@ -43,6 +43,10 @@
   border-radius: 25px;
   height: 45px;
   width: 200px;
+  transition: all ease 0.5s;
+}
+.login-div button:hover {
+    transform: scale(1.07);
 }
 @media screen and (max-width: 991px) {
   .info-div,

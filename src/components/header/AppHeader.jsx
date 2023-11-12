@@ -1,11 +1,12 @@
 import LeftMenu from "../left-menu/LeftMenu";
 import "./AppHeader.css";
-
+import logo from '../../img/logo+name.svg'
 
 function AppHeader() {
   return (
     <div className="all-header">
       <div className="downstream-header container">
+        <img src={logo} height={'300px'}/>
         <div className="info-div">
           <a href="#">Отзывы</a>
           <a href="#">Блог</a>

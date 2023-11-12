@@ -16,7 +16,6 @@ const HeaderSection = () => {
             работает исключительно в фоновом режиме.
           </p>
         </div>
-        <Achievements />
       </div>
     </div>
   );

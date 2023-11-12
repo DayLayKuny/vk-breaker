@@ -1,0 +1,12 @@
+#menu {
+  background: #000;
+  color: #fff;
+}
+#menu-open-btn {
+    display: none;
+}
+@media screen and (max-width: 991px){
+    #menu-open-btn {
+        display: flex;
+    }
+}

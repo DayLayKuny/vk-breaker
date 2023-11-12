@@ -1,0 +1,7 @@
+.header-section {
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../img/Desktop1.png);
+}

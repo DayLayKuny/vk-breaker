@@ -1,4 +1,5 @@
 import './App.css';
+import Compat from './components/Compatibility/Compat';
 import HeaderSection from './components/header-section/HeaderSection';
 import AppHeader from './components/header/AppHeader';
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <AppHeader />
       <HeaderSection />
+      <Compat />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./header-section.css";
+import Achievements from "../achievements/Achievements";
 
 const HeaderSection = () => {
   return (
@@ -15,6 +16,7 @@ const HeaderSection = () => {
             работает исключительно в фоновом режиме.
           </p>
         </div>
+        <Achievements />
       </div>
     </div>
   );

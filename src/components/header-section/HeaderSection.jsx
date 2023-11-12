@@ -1,6 +1,7 @@
 import React from "react";
 import "./header-section.css";
 import Achievements from "../achievements/Achievements";
+import UrlSearch from "../url-search/UrlSearch";
 
 const HeaderSection = () => {
   return (
@@ -16,6 +17,7 @@ const HeaderSection = () => {
             работает исключительно в фоновом режиме.
           </p>
         </div>
+        <UrlSearch />
       </div>
     </div>
   );

@@ -1,0 +1,11 @@
+.search-btn {
+  height: 40px;
+  width: 100px;
+  color: #fff;
+}
+.search-inpt {
+  height: 60px;
+  border: none;
+  border-radius: 40px;
+  background: rgba(25, 88, 166, 0.462);
+}

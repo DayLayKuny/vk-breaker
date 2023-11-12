@@ -1,6 +1,8 @@
-.compat-item h4 {
-    font-weight: bolder;
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.compat-item h6 {
     color: white;
+    font-family: "Press Start 2P";
 }
 
 .maskfa {
@@ -28,6 +30,7 @@
     width: 100%;
     
     flex-wrap: wrap;
+    justify-content: center;
     background-color: rgb(0, 0, 15);
 }
 

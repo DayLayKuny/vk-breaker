@@ -22,13 +22,13 @@
     border-radius: 25px;
     border: 1px solid white;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .all-compat {
     margin-top: 10px;
     display: flex;
     width: 100%;
-    
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(0, 0, 15);

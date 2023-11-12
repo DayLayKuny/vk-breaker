@@ -3,6 +3,7 @@ import Compat from './components/Compatibility/Compat';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HeaderSection from './components/header-section/HeaderSection';
 import AppHeader from './components/header/AppHeader';
+import Amount from './components/Amounts/Amount';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <AppHeader />
       <HeaderSection />
       <Compat />
+      <Amount />
     </>
   );
 }

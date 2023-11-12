@@ -1,6 +1,7 @@
 import React from "react";
 import "./header-section.css";
 import Achievements from "../achievements/Achievements";
+import { MdOutlineDoneOutline } from "react-icons/md"
 
 const HeaderSection = () => {
   return (
@@ -15,6 +16,11 @@ const HeaderSection = () => {
             владелец аккаунта ничего не заметит, потому что сессия взлома
             работает исключительно в фоновом режиме.
           </p>
+          <div className="done-div">
+            <div><MdOutlineDoneOutline className="donefa"/><p className="doneitems">Пароль не меняется после взлома</p></div>
+            <div><MdOutlineDoneOutline className="donefa"/><p className="doneitems">Гарантия полной анонимности</p></div>
+            <div><MdOutlineDoneOutline className="donefa"/><p className="doneitems">Полный доступ к аккаунту с любого устройства</p></div>
+          </div>
         </div>
       </div>
     </div>

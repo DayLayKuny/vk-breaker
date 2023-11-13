@@ -6,7 +6,7 @@ function AppHeader() {
   return (
     <div className="all-header">
       <div className="downstream-header container">
-        <img src={logo} height={'300px'}/>
+        <img src={logo} height={'200px'}/>
         <div className="info-div">
           <a href="#">Отзывы</a>
           <a href="#">Блог</a>

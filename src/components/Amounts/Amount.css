@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.amount-info {
+    text-align: center;
+    color: white;
+    padding: 15px 0 15px 0;
+}
+
+.all-amount {
+    background-color: rgb(0, 0, 15);
+    margin-top: 10px;
+    width: 100%;
+}
+
+.accounts-amount {
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
+
+.accounts-amount h6 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.accounts-amount h5 {
+    font-family: "Press Start 2P";
+    font-weight: bolder;
+}
+
+.accounts-amount p {
+    color: rgb(104, 104, 104);
+}

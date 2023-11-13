@@ -2,7 +2,7 @@ import LeftMenu from "../left-menu/LeftMenu";
 import "./AppHeader.css";
 import logo from '../../img/logo+name.svg'
 
-function AppHeader() {
+function AppHeader({onOpen}) {
   return (
     <div className="all-header">
       <div className="downstream-header container">
@@ -15,7 +15,7 @@ function AppHeader() {
           <a href="#">Контакты</a>
         </div>
         <div className="login-div">
-          <button>Вход / Регистрация</button>
+          <button onClick={() => onOpen()}>Вход / Регистрация</button>
         </div>
         <LeftMenu id="left-menu" />
       </div>

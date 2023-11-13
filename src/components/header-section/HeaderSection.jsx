@@ -3,6 +3,7 @@ import "./header-section.css";
 import Achievements from "../achievements/Achievements";
 import UrlSearch from "../url-search/UrlSearch";
 import { MdOutlineDoneOutline } from "react-icons/md";
+import AuthForm from "../auth-form/AuthForm";
 
 const HeaderSection = () => {
   return (

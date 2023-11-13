@@ -1,16 +1,15 @@
 import React from "react";
 import "./header-section.css";
-import Achievements from "../achievements/Achievements";
 import UrlSearch from "../url-search/UrlSearch";
 import { MdOutlineDoneOutline } from "react-icons/md";
-// import Achievements from "../achievements/Achievements";
 
 const HeaderSection = () => {
   return (
     <div className="header-section">
       <div className="header-section-text container">
         <div className="texts">
-          <p className="header">Как взломать Вконтакте ?</p>
+          <p className="header">Как взломать</p>
+          <p className="header1">Вконтакте ?</p>
           <p>
             <b style={{ color: "#7D35D7FF" }}>VK-Breaker</b> лучший и самый
             эффективный на сегодняшний день, вариант взлома социальной сети

@@ -6,7 +6,9 @@ function Amount () {
             <div className="downstream-amount">
             <div className="amount-info">
                      <h3>Стоимость и оплата</h3>
-                     <p>Заказывая взлом нескольких профилей, или пользуясь нашим сервером повторно, вы получаете гарантированную скидку.</p>
+                     </div>
+                 <div className="divp">
+                    <p>Заказывая взлом нескольких профилей, или пользуясь нашим сервером повторно, вы получаете гарантированную скидку.</p>
                  </div>
                 <div className="actions">
                      <div className="accounts-amount">
@@ -27,7 +29,6 @@ function Amount () {
                 </div>
             </div>
         </div>
-            
     )
 }
 

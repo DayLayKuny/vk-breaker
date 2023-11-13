@@ -15,12 +15,9 @@
   flex-direction: column;
   color: #fff;
 }
-.header {
-  font-size: 50px;
-  font-family: "Press Start 2P";
-}
 .texts {
   max-width: 600px;
+  min-width: 150px;
 }
 @media screen and (max-width: 500px) {
   .header-section  {
@@ -56,5 +53,47 @@
 @media screen and (max-height: 660px){
   .header-section  {
     height: 200vh;
+  }
+}
+
+.tesxts {
+  height: 10vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.header {
+  flex-wrap: wrap;
+}
+
+.header {
+  width: 22ch;
+  animation: typing 4s, .5s;
+  white-space: wrap;
+  overflow: hidden;
+  font-size: 50px;
+  font-family: "Press Start 2P";
+}
+
+.header1 {
+  width: 22ch;
+  animation: typing 4s, .5s;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 50px;
+  font-family: "Press Start 2P";
+  flex-wrap: wrap;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }

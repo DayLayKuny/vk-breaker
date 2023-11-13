@@ -4,11 +4,19 @@
     text-align: center;
     color: white;
     padding: 15px 0 15px 0;
+    margin-bottom: 10px;
+}
+
+.divp {
+    text-align: center;
+    color: white;
+    padding: 15px 0 15px 0;
+    margin-bottom: 10px;
 }
 
 .all-amount {
-    background-color: rgb(0, 0, 15);
-    margin-top: 10px;
+    background-color: #020203FF;
+    padding: 50px 0 50px 0;
     width: 100%;
 }
 
@@ -16,16 +24,26 @@
     color: white;
     margin-left: 20px;
     text-align: center;
+    box-shadow: -5px 0 0 0 rgb(255, 255, 255), 5px 0 0 0 rgb(255, 255, 255), 0 -5px 0 0 rgb(255, 255, 255), 0 5px 0 0 rgb(255, 255, 255);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.accounts-amount:hover {
+    color: back;
 }
 
 .actions {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    min-width: 400px;
 }
 
 .accounts-amount h6 {
     font-size: larger;
     font-weight: bold;
+    
 }
 
 .accounts-amount h5 {
@@ -35,4 +53,15 @@
 
 .accounts-amount p {
     color: rgb(104, 104, 104);
+}
+
+.amount-info h3 {
+    font-family: "Press Start 2P";
+}
+
+.accounts-amount:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+    cursor: pointer;
 }

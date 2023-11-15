@@ -1,12 +1,23 @@
 form {
     width: 450px;
     background: #161B22FF;
+    text-align: center;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     padding: 25px;
     gap: 15px;
     border: 1px solid #30363DFF;
+    animation: anim .5s;
+    transition: all ease .5s;
+}
+@keyframes anim {
+    from {
+        transform: scale(0.7);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 form input {
     height: 50px;
@@ -22,4 +33,13 @@ form button {
     height: 45px;
     border: none;
     border-radius: 12px;
+}
+.form-type {
+    color: #757575FF;
+}
+
+@media screen and (max-width: 480px){
+    form {
+        width: 100%;
+    }
 }

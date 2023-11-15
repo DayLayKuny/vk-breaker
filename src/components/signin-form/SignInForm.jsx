@@ -3,8 +3,9 @@ import "./signin-form.css";
 import { useForm } from "react-hook-form";
 import { MdClose } from "react-icons/md";
 import logo from "../../img/logo+name.svg";
+import GoogleAuth from "../google-auth/GoogleAuth";
 
-const SignInForm = () => {
+const SignInForm = ({onSwitch}) => {
   const {
     handleSubmit,
     formState: { errors },
@@ -39,6 +40,8 @@ const SignInForm = () => {
         }
       />
       <button>Вход</button>
+      <GoogleAuth />
+      <b onClick={() => onSwitch()} className="form-type">Создать аккаунт</b>
     </form>
   );
 };

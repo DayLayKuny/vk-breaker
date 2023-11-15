@@ -17,7 +17,7 @@ function AppHeader({onOpen}) {
         <div className="login-div">
           <button onClick={() => onOpen()}>Вход / Регистрация</button>
         </div>
-        <LeftMenu id="left-menu" />
+        <LeftMenu id="left-menu" onOpen={() => onOpen()}/>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ import AuthForm from "./components/auth-form/AuthForm";
 import { useState } from "react";
 
 function App() {
-  const [openAuth, setOpenAuth] = useState(true);
+  const [openAuth, setOpenAuth] = useState(false);
 
   return (
     <>

@@ -1,15 +1,20 @@
 import React, { useState } from "react";
 import "./auth-form.css";
 import SignInForm from "../signin-form/SignInForm";
+import SignUpForm from "../signup-form/SignUpForm";
 
 const AuthForm = ({ onClose }) => {
   const [showSignIn, setShowSignIn] = useState(false);
   return (
     <div className="auth">
-      <div style={{ zIndex: "10" }}>
-        {showSignIn ? null : (
-          <SignInForm onSwitch={() => setShowSignIn(!showSignIn)} />
-        )}
+      <div className="form-panel">
+        <div style={{ zIndex: "10" }}>
+          {showSignIn ? (
+            <SignUpForm onSwitch={() => setShowSignIn(!showSignIn)} />
+          ) : (
+            <SignInForm onSwitch={() => setShowSignIn(!showSignIn)} />
+          )}
+        </div>
       </div>
       <div
         onClick={() => onClose()}

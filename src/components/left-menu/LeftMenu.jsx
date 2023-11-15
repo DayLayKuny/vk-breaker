@@ -5,7 +5,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import "./left-menu.css";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-const LeftMenu = () => {
+const LeftMenu = ({onOpen}) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -24,6 +24,10 @@ const LeftMenu = () => {
         </Offcanvas.Header>
         <Offcanvas.Body id="menu-body">
           <div className="left-menu-links">
+            <button onClick={() => {
+              onOpen()
+              handleClose()
+            }} className={'auth-btn'}>Вход / Регистрация</button>
             <a href="#">Отзывы</a>
             <a href="#">Блог</a>
             <a href="#">Политика Конфиденциальности</a>

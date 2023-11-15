@@ -6,6 +6,7 @@ import AppHeader from "./components/header/AppHeader";
 import Amount from "./components/Amounts/Amount";
 import AuthForm from "./components/auth-form/AuthForm";
 import { useState } from "react";
+import Bitcoin from "./components/Bitcoin/Bitcoin";
 
 function App() {
   const [openAuth, setOpenAuth] = useState(true);
@@ -17,6 +18,7 @@ function App() {
       <HeaderSection />
       <Compat />
       <Amount />
+      <Bitcoin />
     </>
   );
 }

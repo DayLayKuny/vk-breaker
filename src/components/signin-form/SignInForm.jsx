@@ -17,7 +17,7 @@ const SignInForm = ({onSwitch}) => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} className="auth-form">
       <img src={logo} height={"200px"} />
       <input
         placeholder="Email"

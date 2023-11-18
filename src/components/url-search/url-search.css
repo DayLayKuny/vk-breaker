@@ -25,10 +25,10 @@
   outline: 2px solid rgb(131, 58, 180);
 }
 .search-inpt::placeholder {
-    color: rgb(61, 60, 60)
+  color: rgb(61, 60, 60);
 }
 .url-search {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }

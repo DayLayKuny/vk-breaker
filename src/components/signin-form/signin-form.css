@@ -1,4 +1,4 @@
-form {
+.auth-form {
     width: 450px;
     background: #161B22FF;
     text-align: center;
@@ -19,7 +19,7 @@ form {
         transform: scale(1);
     }
 }
-form input {
+.auth-form input {
     height: 50px;
     border: none;
     background: #0D1117FF;
@@ -29,7 +29,7 @@ form input {
     color: #dedddd;
     padding: 15px;
 }
-form button {
+.auth-form button {
     height: 45px;
     border: none;
     border-radius: 12px;
@@ -39,7 +39,7 @@ form button {
 }
 
 @media screen and (max-width: 480px){
-    form {
+   .auth-form    {
         width: 100%;
     }
 }

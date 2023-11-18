@@ -7,6 +7,7 @@ import Amount from "./components/Amounts/Amount";
 import AuthForm from "./components/auth-form/AuthForm";
 import { useState } from "react";
 import Bitcoin from "./components/Bitcoin/Bitcoin";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [openAuth, setOpenAuth] = useState(false);
@@ -19,6 +20,7 @@ function App() {
       <Compat />
       <Amount />
       <Bitcoin />
+      <Footer />
     </>
   );
 }

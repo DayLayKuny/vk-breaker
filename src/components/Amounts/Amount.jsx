@@ -16,12 +16,12 @@ function Amount () {
                         <p>Все возможности для тарифа базовый</p>
                         <h5>899 /руб.</h5>
                      </div>
-                     <div className="accounts-amount">
+                     <div className="accounts-amount aa1">
                         <h6>Три аккаунта</h6>
                         <p>Все возможности для тарифа оптимальный</p>
                         <h5>1999 /руб.</h5>
                     </div>
-                    <div className="accounts-amount">
+                    <div className="accounts-amount aa1">
                         <h6>Пять аккаунтов</h6>
                         <p>Все возможности для тарифа бизнес</p>
                         <h5>2999 /руб.</h5>

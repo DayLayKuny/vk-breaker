@@ -1,0 +1,82 @@
+.all-footer {
+    background-color: black;
+    margin-top: 3px;
+    padding: 20px 10px;
+}
+
+.downstream-footer {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.footer-item a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: thick double black;
+    border-radius: 5px;
+}
+
+.footer-item a:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 5px double #ffffff;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.footer-item h6{
+    font-weight: bolder;
+    color: #333;
+}
+
+hr {
+    padding: 10px;
+}
+
+.fames {
+    color: white;
+    font-size: 25px;
+}
+
+.footer-item img {
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.footer-item img:hover {
+    border: 5px double #ffffff;
+    transition: 0.5s;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.first {
+    flex-wrap: wrap;
+}
+
+.second {
+    flex-wrap: wrap;
+    padding: 0 0 10px 0;
+}
+
+.yu {
+    
+}
+
+.allfs {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500) {
+    .allfs {
+        flex-wrap: wrap;
+    }
+}

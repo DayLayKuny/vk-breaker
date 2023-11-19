@@ -12,6 +12,7 @@ import Alert from "./components/alert/Alert";
 import Loading from "./components/loading/Loading";
 import ErrorAlert from "./components/error-alert/ErrorAlert";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import UserPage from "./pages/user-page/UserPage";
 
 function App() {
   const [openAuth, setOpenAuth] = useState(false);
@@ -21,24 +22,27 @@ function App() {
 
   return (
     <>
-    <Router>
-      <Routes>
-        <Route />
-      </Routes>
-    </Router>
-      {openAuth && <AuthForm onClose={() => setOpenAuth(false)} />}
-      {openAlert && <Alert />}
-      {loading && <Loading />}
-      {error && <ErrorAlert />}
-      <AppHeader onOpen={() => setOpenAuth(true)} />
-      <HeaderSection onHacking={() => {
-        setLoading(true)
-        setError(false)
-      }} onError={() => setError(true)}/>
-      <Compat />
-      <Amount />
-      <Bitcoin />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path={"/profile"} element={<UserPage />} />
+        </Routes>
+        {openAuth && <AuthForm onClose={() => setOpenAuth(false)} />}
+        {openAlert && <Alert />}
+        {loading && <Loading />}
+        {error && <ErrorAlert />}
+        <AppHeader onOpen={() => setOpenAuth(true)} />
+        <HeaderSection
+          onHacking={() => {
+            setLoading(true);
+            setError(false);
+          }}
+          onError={() => setError(true)}
+        />
+        <Compat />
+        <Amount />
+        <Bitcoin />
+        <Footer />
+      </Router>
     </>
   );
 }

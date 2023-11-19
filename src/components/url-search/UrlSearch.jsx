@@ -2,15 +2,24 @@ import React from "react";
 import "./url-search.css";
 import { useForm } from "react-hook-form";
 
-const UrlSearch = () => {
+const UrlSearch = ({onHacking}) => {
   const {
     handleSubmit,
     formState: { errors },
     register,
   } = useForm();
 
+  const isVKUrlValid = (url) => {
+    const vkUrlRegex = /^https?:\/\/(www\.)?vk\.(com|ru)\/.+/i;
+    return vkUrlRegex.test(url);
+  };
+
   const onSubmit = (data) => {
-    
+    if (isVKUrlValid(data.searchUrl)) {
+      onHacking()
+    }else {
+      
+    }
   };
 
   return (

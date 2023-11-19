@@ -11,6 +11,7 @@ import Footer from "./components/footer/Footer";
 import Alert from "./components/alert/Alert";
 import Loading from "./components/loading/Loading";
 import ErrorAlert from "./components/error-alert/ErrorAlert";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [openAuth, setOpenAuth] = useState(false);
@@ -20,6 +21,11 @@ function App() {
 
   return (
     <>
+    <Router>
+      <Routes>
+        <Route />
+      </Routes>
+    </Router>
       {openAuth && <AuthForm onClose={() => setOpenAuth(false)} />}
       {openAlert && <Alert />}
       {loading && <Loading />}

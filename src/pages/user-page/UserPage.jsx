@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const UserPage = () => {
   return (
-    <div>
-        
-    </div>
-  )
-}
+    <>
+      <Router>
+        <Routes>
+          <Route />
+        </Routes>
+      </Router>
+    </>
+  );
+};
 
-export default UserPage
+export default UserPage;

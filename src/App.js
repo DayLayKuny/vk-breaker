@@ -17,7 +17,6 @@ function App() {
   const [openAlert, setOpenAlert] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-  const [feedback, setFeedback] = useState(false);
 
   return (
     <>

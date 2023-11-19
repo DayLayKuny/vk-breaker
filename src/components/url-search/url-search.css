@@ -11,6 +11,9 @@
   );
   border-radius: 0px 40px 40px 0px;
 }
+.search-btn::selection {
+  background-color: rgb(176, 92, 255);
+}
 .search-inpt {
   width: 70%;
   height: 60px;
@@ -27,8 +30,17 @@
 .search-inpt::placeholder {
   color: rgb(61, 60, 60);
 }
+.search-inpt::selection {
+  background-color: rgb(176, 92, 255);
+}
 .url-search {
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+.url-search h1::selection {
+  background-color: rgb(176, 92, 255);
+}
+.url-search h3::selection {
+  background-color: rgb(176, 92, 255);
 }

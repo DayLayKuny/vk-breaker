@@ -25,6 +25,8 @@
     padding: 20px 20px 20px 20px;
 }
 
+
+
 .all-compat {
     padding: 50px 0 50px 0;
     display: flex;
@@ -36,4 +38,14 @@
 
 .compat-item p {
     color: white;
+}
+
+.compat-item p::selection {
+    background-color: white;
+    color: black;
+}
+
+.compat-item h6::selection {
+    background-color: white;
+    color: black;
 }

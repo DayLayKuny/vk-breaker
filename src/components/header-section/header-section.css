@@ -15,6 +15,15 @@
   flex-direction: column;
   color: #fff;
 }
+
+.texts p::selection {
+  background-color: rgb(176, 92, 255);
+}
+
+.texts b::selection {
+  background-color: rgb(128, 80, 173);
+}
+
 .texts {
   max-width: 600px;
   min-width: 150px;
@@ -41,10 +50,21 @@
   margin-left: 10px;
   font-weight: bold;
 }
+
+.done-div div p::selection {
+  background-color: green;
+}
+
 .donefa {
   height: 25px;
   width: 25px;
+  transition: 0.5s;
 }
+
+.donefa::selection {
+  background-color: rgb(176, 92, 255);
+}
+
 @media screen and (max-height: 760px) {
   .header-section {
     height: 130vh;
@@ -62,6 +82,7 @@
   display: grid;
   place-items: center;
 }
+
 
 .header {
   flex-wrap: wrap;
@@ -84,6 +105,14 @@
   font-size: 50px;
   font-family: "Press Start 2P";
   flex-wrap: wrap;
+}
+
+.header::selection {
+  background-color: rgb(176, 92, 255);
+}
+
+.header1::selection {
+  background-color: rgb(176, 92, 255);
 }
 
 @keyframes typing {

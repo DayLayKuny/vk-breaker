@@ -29,10 +29,21 @@
     border-radius: 15px;
 }
 
+.footer-item a::selection {
+    background-color: white;
+    color: black;
+}
+
 .footer-item h6{
     font-weight: bolder;
     color: #333;
 }
+
+.footer-item h6::selection {
+    background-color: white;
+    color: black;
+}
+
 
 hr {
     padding: 10px;
@@ -42,16 +53,6 @@ hr {
     color: white;
     font-size: 25px;
 }
-
-@keyframes border-dance {
-    0% {
-      background-position: 0px 0px, 300px 116px, 0px 150px, 216px 0px;
-    }
-    100% {
-      background-position: 300px 0px, 0px 116px, 0px 0px, 216px 150px;
-    }
-  }
-
   
 .footer-item img {
     width: 100px;
@@ -61,14 +62,20 @@ hr {
 }
 
 .footer-item img:hover {
-    border: 1px solid #ffffff;
+    width: 90px;
+    border: 1px solid white;
     border-radius: 20px;
-    padding: -10px;
 }
+.footer-item img::selection {
+    background-color: white;
+    color: black;
+}
+
 
 .first {
     flex-wrap: wrap;
 }
+
 
 .second {
     flex-wrap: wrap;
@@ -101,6 +108,17 @@ hr {
     transition: 0.75s;
 }
 
+.copyright a::selection {
+    background-color: white;
+    color: black;
+}
+
+.copyrightres::selection {
+    background-color: white;
+    color: black;
+}
+
+
 .copyrightres {
     color: rgb(88, 88, 88);
 }
@@ -116,9 +134,19 @@ hr {
     transition: 0.75s;
 }
 
+.topmarg::selection {
+    background-color: rgb(255, 0, 0);
+    color: black;
+}
+
 .pcopy {
     color: rgb(44, 44, 44);
     transition: 0.5s;
+}
+
+.pcopy::selection {
+    background-color: white;
+    color: black;
 }
 
 .pcopy:hover {
@@ -129,6 +157,12 @@ hr {
     cursor: pointer;
     color: white;
 }
+
+.copyright h6::selection {
+    background-color: white;
+    color: black;
+}
+
 
 .copyright a:hover {
     color: white;

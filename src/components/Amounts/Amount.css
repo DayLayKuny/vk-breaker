@@ -53,6 +53,12 @@
     
 }
 
+.divp p::selection {
+    background-color: white;
+    color: black;
+}
+
+
 .accounts-amount h5 {
     font-family: "Press Start 2P";
     font-weight: bolder;
@@ -62,8 +68,28 @@
     color: rgb(104, 104, 104);
 }
 
+.accounts-amount p::selection {
+    background-color: black;
+    color: white;
+}
+
 .amount-info h3 {
     font-family: "Press Start 2P";
+}
+
+.amount-info h3::selection {
+    background-color: white;
+    color: black;
+}
+
+.accounts-amount h5::selection {
+    background-color: black;
+    color: white;
+}
+
+.accounts-amount h6::selection {
+    background-color: black;
+    color: white;
 }
 
 .accounts-amount:hover {

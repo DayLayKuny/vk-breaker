@@ -8,13 +8,16 @@ import AuthForm from "./components/auth-form/AuthForm";
 import { useState } from "react";
 import Bitcoin from "./components/Bitcoin/Bitcoin";
 import Footer from "./components/footer/Footer";
+import Alert from "./components/alert/Alert";
 
 function App() {
   const [openAuth, setOpenAuth] = useState(false);
+  const [openAlert, setOpenAlert] = useState(false);
 
   return (
     <>
       {openAuth && <AuthForm onClose={() => setOpenAuth(false)}/>}
+      {openAlert && <Alert />}
       <AppHeader onOpen={() => setOpenAuth(true)}/>
       <HeaderSection />
       <Compat />

@@ -9,21 +9,25 @@ const UrlSearch = () => {
     register,
   } = useForm();
 
+  const onSubmit = (data) => {
+    
+  };
+
   return (
     <div className="url-search">
       <h1>Доступ к аккаунту Вконтакте</h1>
       <h3>введите Адрес страницы к которому нужен доступ </h3>
-      <div style={{ display: "flex" }}>
+      <form style={{ display: "flex" }} onSubmit={handleSubmit(onSubmit)}>
         <input
           type="url"
           className="search-inpt"
           placeholder="https://vk.com/id123456"
           {...register("searchUrl", {
-            required: true
+            required: true,
           })}
         />
         <button className="search-btn">Найти</button>
-      </div>
+      </form>
     </div>
   );
 };

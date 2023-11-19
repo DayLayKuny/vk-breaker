@@ -13,6 +13,8 @@ import Loading from "./components/loading/Loading";
 import ErrorAlert from "./components/error-alert/ErrorAlert";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import UserPage from "./pages/user-page/UserPage";
+import FeedbackPage from "./components/FeedbackPage/FeedbackPage.jsx"
+import Price from "./components/Price/Price.jsx";
 
 function App() {
   const [openAuth, setOpenAuth] = useState(false);
@@ -25,6 +27,8 @@ function App() {
       <Router>
         <Routes>
           <Route path={"/profile"} element={<UserPage />} />
+          <Route path={"/tariff"} element={<FeedbackPage />} />
+          <Route path={"/price"} element={<Price />} />
         </Routes>
         {openAuth && <AuthForm onClose={() => setOpenAuth(false)} />}
         {openAlert && <Alert />}
@@ -45,6 +49,6 @@ function App() {
       </Router>
     </>
   );
-}
+};
 
 export default App;

@@ -1,7 +1,5 @@
 import React from "react";
-import "./signup-form.css";
 import { useForm } from "react-hook-form";
-import { MdClose } from "react-icons/md";
 import logo from "../../img/logo+name.svg";
 import GoogleAuth from "../google-auth/GoogleAuth";
 
@@ -17,7 +15,7 @@ const SignUpForm = ({ onSwitch }) => {
   };
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="auth-form">
-      <img src={logo} height={"200px"} />
+      <img src={logo} height={"200px"} alt="Logo" />
       <input
         placeholder="Никнейм"
         {...register("nickname", { required: true })}

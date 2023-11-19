@@ -13,6 +13,7 @@
     height: 70px;
     color: white;
     padding: 10px;
+    transition: 700ms;
 }
 
 .Ripple {
@@ -45,7 +46,6 @@
 .Bitok:hover {
     color: black;
     background-color: white;
-    transition: 700ms;
     border-radius: 20px;
     padding: 3px;
 }

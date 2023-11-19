@@ -29,7 +29,7 @@
     color: #dedddd;
     padding: 15px;
 }
-.auth-form button {
+.auth-form  button {
     height: 45px;
     border: none;
     border-radius: 12px;
@@ -37,6 +37,8 @@
 .form-type {
     color: #757575FF;
 }
+
+
 
 @media screen and (max-width: 480px){
    .auth-form    {

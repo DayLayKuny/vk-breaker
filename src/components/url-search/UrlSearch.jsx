@@ -2,7 +2,7 @@ import React from "react";
 import "./url-search.css";
 import { useForm } from "react-hook-form";
 
-const UrlSearch = ({onHacking}) => {
+const UrlSearch = ({onHacking, onError}) => {
   const {
     handleSubmit,
     formState: { errors },
@@ -15,11 +15,7 @@ const UrlSearch = ({onHacking}) => {
   };
 
   const onSubmit = (data) => {
-    if (isVKUrlValid(data.searchUrl)) {
-      onHacking()
-    }else {
-      
-    }
+    isVKUrlValid(data.searchUrl) ? onHacking() : onError()
   };
 
   return (
@@ -32,7 +28,7 @@ const UrlSearch = ({onHacking}) => {
           className="search-inpt"
           placeholder="https://vk.com/id123456"
           {...register("searchUrl", {
-            required: true,
+            required: true
           })}
         />
         <button className="search-btn">Найти</button>

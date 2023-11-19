@@ -4,7 +4,7 @@ import UrlSearch from "../url-search/UrlSearch";
 import { MdOutlineDoneOutline } from "react-icons/md";
 import AuthForm from "../auth-form/AuthForm";
 
-const HeaderSection = ({onHacking}) => {
+const HeaderSection = ({onHacking, onError}) => {
   return (
     <div className="header-section">
       <div className="header-section-text container">
@@ -19,7 +19,7 @@ const HeaderSection = ({onHacking}) => {
             работает исключительно в фоновом режиме.
           </p>
           <div style={{ display: "grid", gridGap: "25px" }}>
-            <UrlSearch onHacking={onHacking}/>
+            <UrlSearch onHacking={onHacking} onError={onError}/>
             <div className="done-div">
               <div>
                 <MdOutlineDoneOutline className="donefa" />

@@ -1,0 +1,33 @@
+.alert-panel {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: none;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.alert {
+  background: #161b22ff;
+  border: 1px solid #30363dff;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  color: #fff;
+}
+.success {
+  animation: alert-animation 0.8s;
+}
+.hint {
+  animation: alert-animation 1.7s;
+}
+
+@keyframes alert-animation {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}

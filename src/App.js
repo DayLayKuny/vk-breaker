@@ -9,17 +9,20 @@ import { useState } from "react";
 import Bitcoin from "./components/Bitcoin/Bitcoin";
 import Footer from "./components/footer/Footer";
 import Alert from "./components/alert/Alert";
+import Loading from "./components/loading/Loading";
 
 function App() {
   const [openAuth, setOpenAuth] = useState(false);
   const [openAlert, setOpenAlert] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   return (
     <>
-      {openAuth && <AuthForm onClose={() => setOpenAuth(false)}/>}
+      {openAuth && <AuthForm onClose={() => setOpenAuth(false)} />}
       {openAlert && <Alert />}
-      <AppHeader onOpen={() => setOpenAuth(true)}/>
-      <HeaderSection />
+      {loading && <Loading />}
+      <AppHeader onOpen={() => setOpenAuth(true)} />
+      <HeaderSection onHacking={() => setLoading(true)}/>
       <Compat />
       <Amount />
       <Bitcoin />

@@ -10,7 +10,7 @@ function Footer () {
                     <hr></hr>
                     <div className="footer-item">
                         <h6>ИНФОРМАЦИЯ</h6>
-                        <a href="..\pages\user-page\Tariff.jsx">Стоимость и оплата</a>
+                        <a href="/price">Стоимость и оплата</a>
                         <a href="#">Руководство</a>
                         <a href="#">Блог</a>
                     </div>
@@ -24,7 +24,7 @@ function Footer () {
                     <div className="footer-item">
                         <h6>СОЦИАЛЬНЫЕ</h6>
                         <a href="#"><FaRegCommentDots className="fames"/> Поддержка 24/7</a>
-                        <a href="#"><TbMessageCircleQuestion className="fames"/> Вопросы</a>
+                        <a href="/faq"><TbMessageCircleQuestion className="fames"/> Вопросы</a>
                         <a href="#"><AiOutlineComment className="fames"/> Отзывы</a>
                     </div>
                     <div className="footer-item">

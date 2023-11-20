@@ -15,6 +15,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import UserPage from "./pages/user-page/UserPage";
 import FeedbackPage from "./components/FeedbackPage/FeedbackPage.jsx"
 import Price from "./components/Price/Price.jsx";
+import FAQ from "./components/Faq/Faq.jsx";
 
 function App() {
   const [openAuth, setOpenAuth] = useState(false);
@@ -29,6 +30,7 @@ function App() {
           <Route path={"/profile"} element={<UserPage />} />
           <Route path={"/tariff"} element={<FeedbackPage />} />
           <Route path={"/price"} element={<Price />} />
+          <Route path={"/faq"} element={<FAQ />} />
         </Routes>
         {openAuth && <AuthForm onClose={() => setOpenAuth(false)} />}
         {openAlert && <Alert />}

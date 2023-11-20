@@ -9,10 +9,10 @@ function AppHeader({onOpen}) {
         <img src={logo} height={'200px'}/>
         <div className="info-div">
           <a href="#">Отзывы</a>
-          <a href="#">Блог</a>
+          <a href="/price">Стоимость</a>
+          <a href="/faq">FAQ</a>
           <a href="#">Политика Конфиденциальности</a>
-          <a href="#">О Нас </a>
-          <a href="#">Контакты</a>
+          <a href="#">Блог</a>
         </div>
         <div className="login-div">
           <button onClick={() => onOpen()}>Вход / Регистрация</button>

@@ -121,24 +121,79 @@
 }
 
 .guarantees {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .guarantees p {
     color: white;
-    padding: 10px;
+    text-align: center;
 }
 
-.donefa {
-    font-size: px;
+.donefar {
+    font-size: 25px;
     color: green;
-    padding: 10px;
+    margin: 10px;
+    width: 90%;
 }
 
 .guaritem {
-    border: 1px solid white;
-    width: 250px;
-    margin-left: 20px;
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    box-shadow: -5px 0 0 0 rgb(255, 255, 255), 5px 0 0 0 rgb(255, 255, 255), 0 -5px 0 0 rgb(255, 255, 255), 0 5px 0 0 rgb(255, 255, 255);
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.guaritem:hover {
+    box-shadow: 7px 7px 7px white;
+}
+
+.questions {
+    padding: 20px;
+}
+
+.all-quesitems {
     display: flex;
-    justify-content: center;
+    padding: 20px;
+}
+
+.questions h4{
+    color: white;
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    text-align: center;
+}
+
+.questions h5 {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.questions p {
+    color: #8d8d8d;
+    text-align: center;
+}
+
+.quesitem b {
+    color: #fff;
+}
+
+.quesitem {
+    width: 300px;
+    height: 350px;
+    margin: 10px 10px 80px 10px;
+    transition: 0.5s;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.quesitem:hover {
+    border-radius: 40px;
+    box-shadow: 7px 7px 7px white;
+    border: 1px solid black;
 }

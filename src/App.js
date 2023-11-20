@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <Router>
-        <Routes>
+        <Routes>             
           <Route path={"/profile"} element={<UserPage />} />
         </Routes>
         {openAuth && <AuthForm onClose={() => setOpenAuth(false)} />}

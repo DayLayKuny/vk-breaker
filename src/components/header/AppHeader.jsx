@@ -11,7 +11,7 @@ function AppHeader({onOpen}) {
           <a href="#">Отзывы</a>
           <a href="/price">Стоимость</a>
           <a href="/faq">FAQ</a>
-          <a href="#">Политика Конфиденциальности</a>
+          <a href="/support">Поддержка</a>
           <a href="#">Блог</a>
         </div>
         <div className="login-div">

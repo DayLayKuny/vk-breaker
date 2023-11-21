@@ -16,6 +16,7 @@ import UserPage from "./pages/user-page/UserPage";
 import FeedbackPage from "./components/FeedbackPage/FeedbackPage.jsx"
 import Price from "./components/Price/Price.jsx";
 import FAQ from "./components/Faq/Faq.jsx";
+import Support from "./components/support/Support.jsx";
 
 function App() {
   const [openAuth, setOpenAuth] = useState(false);
@@ -31,6 +32,7 @@ function App() {
           <Route path={"/tariff"} element={<FeedbackPage />} />
           <Route path={"/price"} element={<Price />} />
           <Route path={"/faq"} element={<FAQ />} />
+          <Route path={"/support"} element={<Support />} />
         </Routes>
         {openAuth && <AuthForm onClose={() => setOpenAuth(false)} />}
         {openAlert && <Alert />}

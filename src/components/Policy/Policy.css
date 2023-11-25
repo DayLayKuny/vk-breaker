@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 .all-policy {
-    position: absolute;
     width: 100%;
-    height: 350%;
     background-color: #020203FF;
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     text-align: center;
     flex-wrap: wrap;
+    min-width: 400px;
 }
 
 .head-inform h1 {
@@ -40,6 +40,10 @@
     background-color: white;
 }
 
+.head-inform {
+    padding: 20px;
+}
+
 .main-info {
     padding: 20px 50px;
     flex-wrap: wrap;
@@ -47,17 +51,17 @@
     height: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .main-info {
         padding: 20px;
-    }
-    .all-policy {
-        height: 900%;
     }
     .head-inform {
         padding: 30px;
     }
     .head-inform h1 {
+        font-size: 15px;
+    }
+    .main-info h5 {
         font-size: 15px;
     }
 }

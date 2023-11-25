@@ -26,15 +26,15 @@ function App() {
     <>
       <Router>
         <AppHeader onOpen={() => setOpenAuth(true)}/>
-        <Routes>
-          <Route path={"/"} element={<HomePage />}/>    
-          <Route path={"/profile"} element={<UserPage />} />
-          <Route path={"/tariff"} element={<FeedbackPage />} />
-          <Route path={"/price"} element={<Price />} />
-          <Route path={"/faq"} element={<FAQ />} />
-          <Route path={"/support"} element={<Support />} />
-          <Route path={"/policy-privacy"} element={<Policy />} />
-        </Routes>
+          <Routes>
+            <Route path={"/"} element={<HomePage />}/>    
+            <Route path={"/profile"} element={<UserPage />} />
+            <Route path={"/tariff"} element={<FeedbackPage />} />
+            <Route path={"/price"} element={<Price />} />
+            <Route path={"/faq"} element={<FAQ />} />
+            <Route path={"/support"} element={<Support />} />
+            <Route path={"/policy-privacy"} element={<Policy />} />
+          </Routes>
         <Footer />
       </Router>
     </>

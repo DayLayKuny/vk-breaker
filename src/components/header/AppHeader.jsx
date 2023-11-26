@@ -11,7 +11,6 @@ function AppHeader({ onOpen }) {
           <img src={logo} height={"200px"} />
         </Link>
         <div className="info-div">
-          <Link to="#">Отзывы</Link>
           <Link to="/price">Стоимость</Link>
           <Link to="/faq">FAQ</Link>
           <Link to="/support">Поддержка</Link>

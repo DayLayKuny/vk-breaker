@@ -14,6 +14,7 @@
 
 .header-info {
     text-align: center;
+    padding: 20px;
 }
 
 .header-info p {
@@ -24,12 +25,14 @@
 .downstream-support {
     padding: 20px;
     margin-top: 60px;
+    flex-wrap: wrap;
 }
 
 .supform {
     color: white;
     width: 60%;
     box-shadow: 10px 0 0 0;
+    flex-wrap: wrap;
 }
 
 .supform h4 {
@@ -41,6 +44,7 @@
     border: 1px solid #333;
     border-radius: 10px;
     background-color: #838383;
+    flex-wrap: wrap;
 }
 
 ::placeholder {
@@ -51,6 +55,19 @@
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+    .supname2 {
+        margin-left: 0;
+    }
+    .supname1 {
+        margin-right: 0;
+    }
+    .supform {
+        box-shadow: 0px;
+    }
 }
 
 .supname1 {

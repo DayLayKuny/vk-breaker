@@ -18,7 +18,7 @@ function Footer () {
                     <div className="footer-item">
                         <h6>УСЛОВИЯ</h6>
                         <Link to="/policy-privacy">Политика конфиденциальности</Link>
-                        <Link to="/term-of-use">Пользовательское соглашение</Link>
+                        <Link to="/terms-of-use">Пользовательское соглашение</Link>
                         <Link to="/cookies">Политика Cookies</Link>
                     </div>
                     <div className="footer-item">

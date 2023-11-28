@@ -49,7 +49,7 @@ function Footer () {
                         <h6 className="copyrightres">Copyright ©2023 All Rights Reserved. Все торговые марки являются собственностью их соответствующих владельцев.</h6>
                     </div>
                 </div>
-            </div>         
+            </div>
     )
        
 }

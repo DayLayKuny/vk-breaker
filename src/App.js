@@ -13,7 +13,8 @@ import Policy from "./components/Policy/Policy.jsx";
 import HomePage from "./pages/home/HomePage.jsx";
 import Leadership from "./components/Leadership/Leadership.jsx";
 import Terms from "./components/Terms/Terms.jsx";
-import Cookies from "./components/Cookies/Cookies.jsx";
+import Cookies from "./components/Cookies/Cookies.jsx"
+import User from "./components/User/User.jsx";
 
 function App() {
   const [openAuth, setOpenAuth] = useState(false);
@@ -32,6 +33,7 @@ function App() {
             <Route path={"/how-it-works"} element={<Leadership />} />
             <Route path={"/terms-of-use"} element={<Terms />} />
             <Route path={"/cookies"} element={<Cookies />} />
+            <Route path={"/user"} element={<User />}/>
           </Routes>
         <Footer />
       </Router>

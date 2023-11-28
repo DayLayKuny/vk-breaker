@@ -1,0 +1,145 @@
+.all-user {
+    width: 100%;
+    background-color: #020203FF;
+    padding: 100px 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.headers img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.all-headerfs {
+    width: 20%;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.headers {
+    text-align: center;
+    height: 0 auto;
+}
+
+.headers h2 {
+    color: #929292;
+}
+
+.buttons button {
+    padding: 5px 10px;
+    background-color: #929292;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.outfa {
+    color: red;
+    font-size: 50px;
+}
+
+.setfa {
+    font-size: 50px;
+}
+
+.headers button {
+    padding: 10px 20px;
+    background-color: #929292;
+    border-radius: 5px;
+    margin: 5px;
+    transition: 1s;
+}
+
+.headers button:hover {
+    background-color: azure;
+    border-radius: 25px;
+}
+
+.headers button:focus {
+    background-color: azure;
+    border-radius: 25px;
+}
+
+.main-headiv {
+    width: 70%;
+    border-radius: 10px;
+    background-color: #333;
+    margin: 5%;
+    flex-wrap: wrap;
+}
+
+.mainf img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    transition: 1s;
+}
+
+.mainf img:hover {
+    border-radius: 0;
+}
+
+.mainfs {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mainf p {
+    color: white;
+    font-size: 40px;
+}
+
+.mainf {
+    justify-content: center;
+}
+
+.butdel {
+    display: flex;
+}
+
+.butdel button {
+    padding:  20px;
+    background-color: rgb(255, 6, 6);
+    color: white;
+    border-radius: 25px;
+    margin: 10px;
+    transition: 1s;
+}
+
+.butdel button:hover {
+    background-color: rgb(255, 128, 128);
+    color: #000000;
+}
+
+.butdel p {
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.mains {
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.infoitem {
+    display: flex;
+}
+
+.infoitem p {
+    margin-left: 10px;
+    color: #929292;
+}
+
+.infoitem span {
+    color: #606060;
+}
+
+.mains h3 {
+    color: white;
+    text-align: center;
+}

@@ -1,5 +1,6 @@
 import React from "react"
 import "./Support.css"
+import { CiFileOn } from "react-icons/ci";
 
 function Support () {
     return (
@@ -31,7 +32,8 @@ function Support () {
                     </div>
                     <div className="fileinfo">
                         <p>Приложите файл</p>
-                        <input type="file" />
+                        <label htmlFor="fileinp"><CiFileOn />Click here</label>
+                        <input type="file" id="fileinp" />
                     </div>
                 </div>
                 <div className="supform-info">

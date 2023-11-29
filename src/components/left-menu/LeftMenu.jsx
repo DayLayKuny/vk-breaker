@@ -28,7 +28,6 @@ const LeftMenu = ({onOpen}) => {
               onOpen()
               handleClose()
             }} className={'auth-btn'}>Вход / Регистрация</button>
-            <a href="#">Отзывы</a>
             <a href="#">Блог</a>
             <a href="#">Политика Конфиденциальности</a>
             <a href="#">О Нас </a>

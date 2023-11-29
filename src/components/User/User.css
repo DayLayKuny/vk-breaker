@@ -96,6 +96,7 @@
 
 .mainf {
     justify-content: center;
+    display: block;
 }
 
 .butdel {
@@ -103,22 +104,34 @@
 }
 
 .butdel button {
-    padding:  20px;
-    background-color: rgb(255, 6, 6);
-    color: white;
+    padding:  10px;
+    width: 100px;
+    background: linear-gradient(
+    90deg,
+    rgb(104, 0, 0) 0%,
+    rgba(253, 29, 29, 1) 100%
+    );
+    color: #636363;
     border-radius: 25px;
     margin: 10px;
     transition: 1s;
+    border: 1px solid #434343;
+    font-weight: bolder;
 }
 
 .butdel button:hover {
     background-color: rgb(255, 128, 128);
-    color: #000000;
+    color: #fff;
+    border: 1px solid #fff;
 }
 
 .butdel p {
     font-size: 35px;
     margin-top: 10px;
+}
+
+.butdel {
+    justify-content: center;
 }
 
 .mains {
@@ -142,4 +155,24 @@
 .mains h3 {
     color: white;
     text-align: center;
+}
+
+.change  {
+    border: none;
+    color: #fff;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 100%
+    );
+    border-radius: 15px;
+    height: 45px;
+    width: 100px;
+    transition: all ease 1s;
+    margin: 10px;
+}
+
+.change:hover {
+    transform: scale(1.17);
 }

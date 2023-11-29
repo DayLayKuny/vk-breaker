@@ -25,6 +25,7 @@ function User () {
                         <div className="mainf">
                             <p>Аватар</p>
                             <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" alt="User" />
+                            <button className="change">Change</button>
                             <p>Конфигурации</p>
                                 <div className="butdel">
                                 <p>Профиль:</p>
@@ -62,6 +63,9 @@ function User () {
 
                         </div>
                     </div>
+                </div>
+                <div className="all-hacked">
+
                 </div>
         </div>
     )

@@ -23,7 +23,7 @@ function App() {
       <Router>
         <AppHeader onOpen={() => setOpenAuth(true)}/>
           <Routes>
-            <Route path={"/"} element={<HomePage />}/>    
+            <Route path={"/"} element={<HomePage openAuth={openAuth} onOpenAuth={() => setOpenAuth(false)}/>}/>    
             <Route path={"/profile"} element={<UserPage />} />
             <Route path={"/tariff"} element={<FeedbackPage />} />
             <Route path={"/price"} element={<Price />} />

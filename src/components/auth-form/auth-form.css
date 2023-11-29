@@ -14,3 +14,11 @@
     justify-content: center;
     padding: 15px;
 }
+.auth-form-panel {
+    z-index: 10;
+}
+@media screen and (max-width: 480px){
+    .auth-form-panel {
+        width: 90%;
+    }
+}

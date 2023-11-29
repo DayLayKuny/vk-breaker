@@ -3,7 +3,7 @@ import "./AppHeader.css";
 import logo from "../../img/logo+name.svg";
 import { Link } from "react-router-dom";
 
-function AppHeader({ onOpen }) {
+function AppHeader({ onOpen, open }) {
   return (
     <div className="all-header">
       <div className="downstream-header container">

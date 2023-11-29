@@ -3,12 +3,15 @@ import "./auth-form.css";
 import SignInForm from "../signin-form/SignInForm";
 import SignUpForm from "../signup-form/SignUpForm";
 
-const AuthForm = ({ onClose }) => {
+const AuthForm = ({ onClose, openAuth }) => {
   const [showSignIn, setShowSignIn] = useState(false);
+
   return (
     <div className="auth">
       <div className="form-panel">
-        <div style={{ zIndex: "10" }}>
+        <div
+          className="auth-form-panel"
+        >
           {showSignIn ? (
             <SignUpForm onSwitch={() => setShowSignIn(!showSignIn)} />
           ) : (

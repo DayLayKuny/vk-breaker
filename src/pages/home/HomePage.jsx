@@ -9,14 +9,13 @@ import ErrorAlert from "../../components/error-alert/ErrorAlert";
 import AppHeader from "../../components/header/AppHeader";
 import HeaderSection from "../../components/header-section/HeaderSection";
 
-const HomePage = () => {
-  const [openAuth, setOpenAuth] = useState(false);
+const HomePage = ({openAuth, onOpenAuth}) => {
   const [openAlert, setOpenAlert] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   return (
     <>
-      {openAuth && <AuthForm onClose={() => setOpenAuth(false)} />}
+      {openAuth && <AuthForm onClose={onOpenAuth}/>}
       {openAlert && <Alert />}
       {loading && <Loading />}
       {error && <ErrorAlert />}

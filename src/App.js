@@ -17,20 +17,20 @@ import Cookies from "./components/Cookies/Cookies.jsx"
 import User from "./components/User/User.jsx";
 
 function App() {
-  const [openAuth, setOpenAuth] = useState(false);
+  const [openAuth, setOpenAuth] = useState(true);
   return (
     <>
       <Router>
-        <AppHeader onOpen={() => setOpenAuth(true)}/>
+        <AppHeader onOpen={() => setOpenAuth(true)} open={openAuth} onClose={() => setOpenAuth(false)}/>
           <Routes>
             <Route path={"/"} element={<HomePage openAuth={openAuth} onOpenAuth={() => setOpenAuth(false)}/>}/>    
             <Route path={"/profile"} element={<UserPage />} />
             <Route path={"/tariff"} element={<FeedbackPage />} />
-            <Route path={"/price"} element={<Price />} />
-            <Route path={"/faq"} element={<FAQ />} />
-            <Route path={"/support"} element={<Support />} />
-            <Route path={"/policy-privacy"} element={<Policy />} />
-            <Route path={"/how-it-works"} element={<Leadership />} />
+            <Route path={"/price"} element={<Price openAuth={openAuth} onOpenAuth={() => setOpenAuth(false)}/>} />
+            <Route path={"/faq"} element={<FAQ openAuth={openAuth} onOpenAuth={() => setOpenAuth(false)}/>} />
+            <Route path={"/support"} element={<Support openAuth={openAuth} onOpenAuth={() => setOpenAuth(false)}/>} />
+            <Route path={"/policy-privacy"} element={<Policy openAuth={openAuth} onOpenAuth={() => setOpenAuth(false)}/>} />
+            <Route path={"/how-it-works"} element={<Leadership openAuth={openAuth} onOpenAuth={() => setOpenAuth(false)}/>} />
             <Route path={"/terms-of-use"} element={<Terms />} />
             <Route path={"/cookies"} element={<Cookies />} />
             <Route path={"/user"} element={<User />}/>

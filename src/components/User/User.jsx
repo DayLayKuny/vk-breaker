@@ -3,6 +3,8 @@ import "./User.css";
 import { GrUserSettings } from "react-icons/gr";
 import { IoLogOutOutline } from "react-icons/io5";
 import { SiHackaday } from "react-icons/si";
+import { BsIncognito } from "react-icons/bs";
+import { TiInfo } from "react-icons/ti";
 
 function User () {
     return (
@@ -22,7 +24,7 @@ function User () {
             </div>
             <div className="main-headiv">
                     <div className="mainfs">
-                        <div className="mainf">
+                        {/* <div className="mainf">
                             <p>Аватар</p>
                             <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" alt="User" />
                             <button className="change">Change</button>
@@ -61,11 +63,23 @@ function User () {
                                 </div>
                             </div>
 
+                        </div> */}
+                        <div className="all-hacked">
+                            <div className="info-hack">
+                                <div className="info-down-hack">
+                                    <BsIncognito className="hackfa"/>
+                                    <span>Заказанные аккаунты</span>
+                                </div>
+                                <span className="heremustbeamount">0</span>
+                            </div>
+                            <div className="main">
+                                <TiInfo  className="infa" />
+                                <div className="nothackedyet">
+                                     На данный момент заказанные вами аккаунты отсутствуют!
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="all-hacked">
-
                 </div>
         </div>
     )

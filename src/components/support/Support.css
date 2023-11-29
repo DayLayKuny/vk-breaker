@@ -153,3 +153,15 @@
 .fileinfo label:hover {
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 900px) {
+    .downstream-support{
+        display: flex;
+        flex-direction: column;
+        border: 5px solid red;
+    }
+    .supform{
+        background: red;
+    }
+}

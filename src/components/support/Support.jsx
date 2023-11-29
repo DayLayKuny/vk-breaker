@@ -47,8 +47,6 @@ function Support () {
                     <p>Регистрируя профиль на панели мониторинга, вы автоматически принимаете все необходимые условия</p><a href="/policy-privacy">условия и положения.</a>
                 </div>
             </div>
-        </div>
-    )
-}
-
-export default Support
+            </div>
+  )}
+export default Support;

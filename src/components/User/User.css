@@ -176,3 +176,39 @@
 .change:hover {
     transform: scale(1.17);
 }
+
+.info-hack {
+    display: flex;
+    font-size: 20px;
+    color: white;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hackfa {
+    margin: 5px;
+}
+
+.all-hacked {
+    width: 100%;
+}
+
+.nothackedyet {
+    color: red;
+    border: 1px solid red;
+    padding: 20px;
+    margin: 10px 0 10px 0;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.nothackedyet:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: red;
+}
+
+.infa {
+    color: red;
+    font-size: 50px;
+}

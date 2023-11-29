@@ -15,7 +15,6 @@ const HomePage = ({openAuth, onOpenAuth}) => {
   const [error, setError] = useState(false);
   return (
     <>
-      {openAuth && <AuthForm onClose={onOpenAuth}/>}
       {openAlert && <Alert />}
       {loading && <Loading />}
       {error && <ErrorAlert />}

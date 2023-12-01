@@ -15,6 +15,7 @@ import Leadership from "./components/Leadership/Leadership.jsx";
 import Terms from "./components/Terms/Terms.jsx";
 import Cookies from "./components/Cookies/Cookies.jsx"
 import User from "./components/User/User.jsx";
+import Blog from "./pages/user-page/Blog/Blog.jsx";
 
 function App() {
   const [openAuth, setOpenAuth] = useState(false);
@@ -32,8 +33,9 @@ function App() {
             <Route path={"/policy-privacy"} element={<Policy openAuth={openAuth} onOpenAuth={() => setOpenAuth(false)}/>} />
             <Route path={"/how-it-works"} element={<Leadership openAuth={openAuth} onOpenAuth={() => setOpenAuth(false)}/>} />
             <Route path={"/terms-of-use"} element={<Terms />} />
-            <Route path={"/cookies"} element={<Cookies />} />
-            <Route path={"/user"} element={<User />}/>
+            <Route path={"/cookies"} element={<Cookies />}  />
+            <Route path={"/user"} element={<User />} />
+            <Route path={"/blog"} element={<Blog />} />
           </Routes>
         <Footer />
       </Router>

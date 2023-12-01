@@ -33,6 +33,7 @@
     width: 60%;
     box-shadow: 10px 0 0 0;
     flex-wrap: wrap;
+    
 }
 
 .supform h4 {
@@ -141,6 +142,10 @@
     display: none;
 }
 
+.fileinfo{
+    margin-bottom: 20px;
+}
+
 .fileinfo label {
     height: 50px;
     width: 75%;
@@ -176,6 +181,7 @@
 }
 
 .sub input{
+    border: 0;
     padding: 20px;
     border-radius: 25px;
     color: rgb(0, 108, 65);
@@ -190,5 +196,8 @@
 }
 
 .sub {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     text-align: center;
 }

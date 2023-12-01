@@ -1,15 +1,23 @@
 import React from "react"
 import "./Support.css"
 import { CiFileOn } from "react-icons/ci";
+import { useState } from "react";
 
 function Support () {
+
+    const [fileName, setFileName] = useState('Файл не выбран')
+
+    function handleFileChange(event){
+        setFileName(event.target.files[0].name);
+    };
+
     return (
         <div className="all-support">
                 <div className="header-info">
                     <h5>Обращение В Службу Поддержки Клиентов</h5>
                     <p>Заполните форму и мы свяжемся с вами в ближайшее время.</p>
                 </div>
-            <div className="downstream-support">
+            <form className="downstream-support">
                 <div className="supform">
                     <h4>Отправьте нам сообщение</h4>
                     <div className="supnameinput">
@@ -33,8 +41,14 @@ function Support () {
                     <div className="fileinfo">
                         <p>Приложите файл</p>
                         <label htmlFor="fileinp"><CiFileOn />Click here</label>
-                        <input type="file" id="fileinp" />
+                        <input type="file" onChange={handleFileChange}   id="fileinp" />
+                        <br />
+                        <span style={{ textAlign: 'center' }}>{fileName}</span>
+
                     </div>
+                        <div className="sub">
+                            <input type="submit" />
+                        </div>
                 </div>
                 <div className="supform-info">
                     <h4>Контактная информация</h4>
@@ -46,10 +60,9 @@ function Support () {
                     <p>billing@vzlom-vk.ru</p>
                     <p>Регистрируя профиль на панели мониторинга, вы автоматически принимаете все необходимые условия</p><a href="/policy-privacy">условия и положения.</a>
                 </div>
-            </div>
-            <div className="sub">
-                <input type="submit" />
-            </div>
+                
+
+            </form>
             </div>
   )}
 export default Support;

@@ -17,7 +17,7 @@ import Cookies from "./components/Cookies/Cookies.jsx"
 import User from "./components/User/User.jsx";
 
 function App() {
-  const [openAuth, setOpenAuth] = useState(true);
+  const [openAuth, setOpenAuth] = useState(false);
   return (
     <>
       <Router>

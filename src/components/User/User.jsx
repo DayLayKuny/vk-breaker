@@ -2,9 +2,10 @@ import React from "react";
 import "./User.css";
 import { GrUserSettings } from "react-icons/gr";
 import { IoLogOutOutline } from "react-icons/io5";
-import { SiHackaday } from "react-icons/si";
+import { FaUserSecret } from "react-icons/fa6";
 import { BsIncognito } from "react-icons/bs";
 import { TiInfo } from "react-icons/ti";
+import { FiUserCheck } from "react-icons/fi";
 
 function User () {
     return (
@@ -18,7 +19,7 @@ function User () {
                             <button><GrUserSettings className="setfa" /></button>
                             <button><IoLogOutOutline className="outfa" /></button>
                         </div>
-                        <button><SiHackaday className="setfa"/> Hacked</button>
+                        <button><FaUserSecret className="setfa"/> Hacked</button>
                     </div>
                 </div>
             </div>
@@ -76,6 +77,10 @@ function User () {
                                 <TiInfo  className="infa" />
                                 <div className="nothackedyet">
                                      На данный момент заказанные вами аккаунты отсутствуют!
+                                </div>
+                                <FiUserCheck className="infar"/>
+                                <div className="alreadyhacked">
+                                    account name, nickname and gmail
                                 </div>
                             </div>
                         </div>

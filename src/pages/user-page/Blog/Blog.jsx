@@ -1,7 +1,6 @@
 import React from "react";
 import "./Blog.css";
 import { FaEye } from "react-icons/fa";
-import { GoHeartFill } from "react-icons/go";
 
 function Blog () {
     return (
@@ -20,12 +19,8 @@ function Blog () {
                         <div className="down-info-news">
                             <p>
                                 <FaEye  className="feye"/>
-                                100
-                            </p>
-                            <p>
-                                <GoHeartFill className="feye"/>
-                                24
-                            </p>        
+                                {Math.floor(Math.random() * 1000)}
+                            </p>   
                         </div>
                     </div>
                     <div className="news-item">
@@ -36,12 +31,8 @@ function Blog () {
                         <div className="down-info-news">
                             <p>
                                 <FaEye  className="feye"/>
-                                100
-                            </p>
-                            <p>
-                                <GoHeartFill className="feye"/>
-                                24
-                            </p>        
+                                {Math.floor(Math.random() * 1000)}
+                            </p>     
                         </div>
                     </div>
                     <div className="news-item">
@@ -52,12 +43,8 @@ function Blog () {
                         <div className="down-info-news">
                             <p>
                                 <FaEye  className="feye"/>
-                                100
-                            </p>
-                            <p>
-                                <GoHeartFill className="feye"/>
-                                24
-                            </p>        
+                                {Math.floor(Math.random() * 1000)}
+                            </p>     
                         </div>
                     </div>
                 </div>

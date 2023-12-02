@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./loading.css";
 import Alert from "../alert/Alert";
-import YourComponent from "./nothing/mycomp"
+import App from "./nothing/loapp";
 
 const Loading = () => {
   const [load, setLoad] = useState(true);
 
   setInterval(() => {
     setLoad(false);
-  }, "15000");
+  }, "55000");
 
   return (
     <>
@@ -37,7 +37,7 @@ const Loading = () => {
                 <div class="block-meter"></div>
               </div>
             </div>
-            <YourComponent  />
+            <App />
           </div>
         </div>
       ) : (

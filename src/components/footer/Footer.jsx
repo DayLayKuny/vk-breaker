@@ -13,7 +13,7 @@ function Footer () {
                         <h6>ИНФОРМАЦИЯ</h6>
                         <Link to="/price">Стоимость и оплата</Link>
                         <Link to="/how-it-works">Руководство</Link>
-                        <Link to="#">Блог</Link>
+                        <Link to="/blog">Блог</Link>
                     </div>
                     <div className="footer-item">
                         <h6>УСЛОВИЯ</h6>

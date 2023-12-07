@@ -18,7 +18,7 @@ function AppHeader({ onOpen, open, onClose }) {
             <Link to="/price">Стоимость</Link>
             <Link to="/faq">FAQ</Link>
             <Link to="/support">Поддержка</Link>
-            <Link to="#">Блог</Link>
+            <Link to="/blog">Блог</Link>
             <Link to="/user">User</Link>
           </div>
           <div className="login-div">

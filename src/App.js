@@ -18,35 +18,11 @@ import User from "./components/User/User.jsx";
 import axios from "axios";
 import AppLoader from "./components/app-loader/AppLoader.jsx";
 import Cookies from "js-cookie";
+import Blog from '../src/pages/user-page/Blog/Blog.jsx'
 
 function App() {
-  useEffect(() => {
-    const cookieValue = Cookies.get("token");
-    axios
-      .get("http://127.0.0.1:5000/api/v4/get_blogs")
-      .then((res) => {
-        console.log(res);
-        setBlogs(res.data);
-        setLoader(false);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-    if (cookieValue != undefined) {
-      axios
-        .post("http://127.0.0.1:5000/user/api/v4/get_user_data", {
-          headers: {
-            "Content-Type": "application/json",
-          },
-          token: "$2b$12$kec9vXpBGFv8dM1DtG.fFuta9WQAckrwIQE0Fct.VLVstnWwHbZQ.",
-        })
-        .then((res) => console.log(res))
-        .catch((err) => console.log(err));
-    }
-  }, []);
-  const [blogs, setBlogs] = useState([]);
-  const [loader, setLoader] = useState(true);
-  const [openAuth, setOpenAuth] = useState(true);
+  const [openAuth, setOpenAuth] = useState(false);
+  const [loader, setLoader] = useState(false)
   return (
     <>
       {loader ? (
@@ -118,6 +94,9 @@ function App() {
             <Route path={"/terms-of-use"} element={<Terms />} />
             <Route path={"/cookies"} element={<CookiesPage />} />
             <Route path={"/user"} element={<User />} />
+            <Route path={"/cookies"} element={<Cookies />} />
+            <Route path={"/user"} element={<User />} />
+            <Route path={"/blog"} element={<Blog />} />
           </Routes>
           <Footer />
         </Router>

@@ -8,7 +8,7 @@
 }
 
 .header-info h5 {
-    font-family: "Press Start 2P";
+    font-family: 'Gilroy-Bold', sans-serif;
     color: white;
 }
 
@@ -33,6 +33,7 @@
     width: 60%;
     box-shadow: 10px 0 0 0;
     flex-wrap: wrap;
+    
 }
 
 .supform h4 {
@@ -60,13 +61,22 @@
 
 @media screen and (max-width: 600px) {
     .supname2 {
-        margin-left: 0;
+        margin-right: 100pxp;
     }
     .supname1 {
-        margin-right: 0;
+        margin: 0px 0px 0px 0px;
     }
     .supform {
-        box-shadow: 0px;
+        box-shadow: 0px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .supname2 {
+        margin: 10px 25px 0 0;
+    }
+    .supname1 {
+        margin: 0 0 0 25px;
     }
 }
 
@@ -126,4 +136,68 @@
 .supform-info a {
     padding:  0px 20px 20px  20px;
     color: #838383;
+}
+
+#fileinp {
+    display: none;
+}
+
+.fileinfo{
+    margin-bottom: 20px;
+}
+
+.fileinfo label {
+    height: 50px;
+    width: 75%;
+    border-radius: 25px;
+    color: #333;
+    background-color: #838383;
+    font-size: 30px;
+}
+
+.fileinfo label:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+    .downstream-support{
+        display: flex;
+        flex-direction: column;
+    }
+    .supform{
+        box-shadow: 0 10px 0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .supform-info {
+        text-align: center;
+        width: 100%;
+    }
+    .supform-info h4 {
+        margin: 0;
+    }
+}
+
+.sub input{
+    border: 0;
+    padding: 20px;
+    border-radius: 25px;
+    color: rgb(0, 108, 65);
+    background-color: rgb(0, 36, 21);
+    font-size: 30px;
+    transition: 1s;
+}
+
+.sub input:hover {
+    color: rgb(0, 36, 21);
+    background-color: rgb(0, 108, 65);
+}
+
+.sub {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
 }

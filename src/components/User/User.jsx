@@ -2,7 +2,10 @@ import React from "react";
 import "./User.css";
 import { GrUserSettings } from "react-icons/gr";
 import { IoLogOutOutline } from "react-icons/io5";
-import { SiHackaday } from "react-icons/si";
+import { FaUserSecret } from "react-icons/fa6";
+import { BsIncognito } from "react-icons/bs";
+import { TiInfo } from "react-icons/ti";
+import { FiUserCheck } from "react-icons/fi";
 
 function User () {
     return (
@@ -16,15 +19,16 @@ function User () {
                             <button><GrUserSettings className="setfa" /></button>
                             <button><IoLogOutOutline className="outfa" /></button>
                         </div>
-                        <button><SiHackaday className="setfa"/> Hacked</button>
+                        <button><FaUserSecret className="setfa"/> Hacked</button>
                     </div>
                 </div>
             </div>
             <div className="main-headiv">
                     <div className="mainfs">
-                        <div className="mainf">
+                        {/* <div className="mainf">
                             <p>Аватар</p>
                             <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" alt="User" />
+                            <button className="change">Change</button>
                             <p>Конфигурации</p>
                                 <div className="butdel">
                                 <p>Профиль:</p>
@@ -60,6 +64,25 @@ function User () {
                                 </div>
                             </div>
 
+                        </div> */}
+                        <div className="all-hacked">
+                            <div className="info-hack">
+                                <div className="info-down-hack">
+                                    <BsIncognito className="hackfa"/>
+                                    <span>Заказанные аккаунты</span>
+                                </div>
+                                <span className="heremustbeamount">0</span>
+                            </div>
+                            <div className="main">
+                                <TiInfo  className="infa" />
+                                <div className="nothackedyet">
+                                     На данный момент заказанные вами аккаунты отсутствуют!
+                                </div>
+                                <FiUserCheck className="infar"/>
+                                <div className="alreadyhacked">
+                                    account name, nickname and gmail
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

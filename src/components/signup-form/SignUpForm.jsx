@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import logo from "../../img/logo+name.svg";
 import GoogleAuth from "../google-auth/GoogleAuth";
+import "./signup-form.css"
 
 const SignUpForm = ({ onSwitch }) => {
   const {

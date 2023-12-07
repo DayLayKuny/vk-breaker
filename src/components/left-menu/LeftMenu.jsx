@@ -28,11 +28,10 @@ const LeftMenu = ({onOpen}) => {
               onOpen()
               handleClose()
             }} className={'auth-btn'}>Вход / Регистрация</button>
-            <a href="#">Отзывы</a>
-            <a href="#">Блог</a>
-            <a href="#">Политика Конфиденциальности</a>
-            <a href="#">О Нас </a>
-            <a href="#">Контакты</a>
+            <a to="/price">Стоимость</a>
+            <a to="/faq">FAQ</a>
+            <a to="/support">Поддержка</a>
+            <a to="/blog">Блог</a>
           </div>
         </Offcanvas.Body>
       </Offcanvas>

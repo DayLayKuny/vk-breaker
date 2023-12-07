@@ -16,11 +16,10 @@
 }
 .search-inpt {
   width: 70%;
-  height: 60px;
   border: none;
   border-radius: 40px 0px 0px 40px;
   background: #ffffff7e;
-  padding: 22px;
+  padding: 15px;
   font-size: 18px;
   color: rgba(131, 58, 180, 1);
 }

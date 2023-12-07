@@ -12,7 +12,7 @@
 
 .headercookies h4 {
     color: rgb(255, 0, 255);
-    font-family: "Press Start 2P";
+    font-family: 'Gilroy-Bold', sans-serif;
     text-align: center;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .maincookies h5{
-    font-family: "Press Start 2P";
+    font-family: 'Gilroy-Bold', sans-serif;
     color: rgb(255, 0, 255);
     font-size: small;
     padding: 20px 0;

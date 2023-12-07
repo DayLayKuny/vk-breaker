@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-
 .header-section {
   height: 120vh;
   width: 100%;
@@ -78,7 +76,6 @@
 
 .tesxts {
   height: 10vh;
-  /*This part is important for centering*/
   display: grid;
   place-items: center;
 }
@@ -94,7 +91,7 @@
   white-space: nowrap;
   overflow: hidden;
   font-size: 50px;
-  font-family: "Press Start 2P";
+  font-family: 'Gilroy-Bold', sans-serif;
 }
 
 .header1 {
@@ -103,7 +100,7 @@
   white-space: nowrap;
   overflow: hidden;
   font-size: 50px;
-  font-family: "Press Start 2P";
+  font-family: 'Gilroy-Bold', sans-serif;
   flex-wrap: wrap;
 }
 

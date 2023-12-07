@@ -38,7 +38,9 @@
     color: #757575FF;
 }
 
-
+.form-type:hover {
+    cursor: pointer;
+}
 
 @media screen and (max-width: 480px){
    .auth-form    {

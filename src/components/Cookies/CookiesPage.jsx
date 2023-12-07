@@ -1,7 +1,7 @@
 import React from "react";
 import "./Cookies.css"
 
-function Cookies () {
+function CookiesPage () {
     return (
         <div className="all-cookies">
             <div className="headercookies">
@@ -31,4 +31,4 @@ function Cookies () {
     )
 }
 
-export default Cookies
+export default CookiesPage

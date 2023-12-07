@@ -2,42 +2,34 @@ import React, { useState } from "react";
 import "./loading.css";
 import Alert from "../alert/Alert";
 import App from "./nothing/loapp";
+import GreetingComponent from "./nothing/console"
 
 const Loading = () => {
   const [load, setLoad] = useState(true);
 
   setInterval(() => {
     setLoad(false);
-  }, "55000");
+  }, "50000");
 
   return (
     <>
       {load ? (
         <div className="loading">
           <div>
-            <div className="loader">
-              <div class="loader-bar">
-                <div class="block-border"></div>
-                <div class="block-border"></div>
-                <div class="block-border"></div>
-                <div class="block-border"></div>
-                <div class="block-border"></div>
-                <div class="block-border"></div>
-                <div class="block-border"></div>
-                <div class="block-border"></div>
-                <div class="block-meter"></div>
-                <div class="block-meter"></div>
-                <div class="block-meter"></div>
-                <div class="block-meter"></div>
-                <div class="block-meter"></div>
-                <div class="block-meter"></div>
-                <div class="block-meter"></div>
-                <div class="block-meter"></div>
-                <div class="block-meter"></div>
-                <div class="block-meter"></div>
+            <App />
+            <div class="container1">
+              <div class="top">
+                <span class="dot dot1"></span>
+                <span class="dot dot2"></span>
+                <span class="dot dot3"></span>
+              </div>
+
+              <div class="content">
+                <h3>Browser Window</h3>
+                <p>How to create a browser window look with CSS.</p>
               </div>
             </div>
-            <App />
+            <GreetingComponent />
           </div>
         </div>
       ) : (

@@ -32,131 +32,40 @@
   }
 } */
 
-.loader-bar {
-  width: 60vw;
-  height: 12vw;
-  display: grid;
-  grid-template-columns: repeat(3,2vw) repeat(10, 3vw 2vw) repeat(2,2vw);
-  grid-template-rows: repeat(6,2vw);
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-.block-border {
-  background-color: black;
+.container1 {
+  border: 3px solid #999999;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  font-family: arial;
+  box-sizing: border-box;
 }
 
-.block-meter {
+.top {
+  padding: 10px;
+  background: #999999;
+}
+
+.content {
+  padding: 10px;
+}
+
+.dot1 {
+  background-color: red;
+}
+
+.dot2 {
+  background-color: yellow;
+}
+
+.dot3 {
   background-color: green;
-}
-
-.block-border:nth-of-type(1) {
-  grid-row: 1;
-  grid-column: 3/-3;
-}
-
-.block-border:nth-of-type(2) {
-  grid-row: -2;
-  grid-column: 3/-3;
-}
-
-.block-border:nth-of-type(3) {
-  grid-row: 3/5;
-  grid-column: 1;
-}
-
-.block-border:nth-of-type(4) {
-  grid-row: 3/5;
-  grid-column: -2;
-}
-
-.block-border:nth-of-type(5) {
-  grid-row: 2;
-  grid-column: 2;
-}
-
-.block-border:nth-of-type(6) {
-  grid-row: 2;
-  grid-column: -3;
-}
-
-.block-border:nth-of-type(7) {
-  grid-row: 5;
-  grid-column: 2;
-}
-
-.block-border:nth-of-type(8) {
-  grid-row: 5;
-  grid-column: -3;
-}
-
-.block-meter:nth-of-type(9) {
-  grid-row: 3/5;
-  grid-column: 4;
-}
-
-.block-meter:nth-of-type(10) {
-  grid-row: 3/5;
-  grid-column: 6;
-}
-
-.block-meter:nth-of-type(11) {
-  grid-row: 3/5;
-  grid-column: 8;
-}
-
-.block-meter:nth-of-type(12) {
-  grid-row: 3/5;
-  grid-column: 10;
-}
-
-.block-meter:nth-of-type(13) {
-  grid-row: 3/5;
-  grid-column: 12;
-  opacity: 0;
-  animation: blinky1 2s linear forwards;
-}
-
-.block-meter:nth-of-type(14) {
-  grid-row: 3/5;
-  grid-column: 14;
-  opacity: 0;
-  animation: blinky1 2s 4s linear forwards;
-}
-
-.block-meter:nth-of-type(15) {
-  grid-row: 3/5;
-  grid-column: 16;
-  opacity: 0;
-  animation: blinky1 2s 6s linear forwards;
-}
-
-.block-meter:nth-of-type(16) {
-  grid-row: 3/5;
-  grid-column: 18;
-  opacity: 0;
-  animation: blinky1 2s 8s linear forwards;
-}
-
-.block-meter:nth-of-type(17) {
-  grid-row: 3/5;
-  grid-column: 20;
-  opacity: 0;
-  animation: blinky1 2s 10s linear forwards;
-}
-
-.block-meter:nth-of-type(18) {
-  grid-row: 3/5;
-  grid-column: 22;
-  opacity: 0;
-  animation: blinky2 3s 14s linear;
-}
-
-@keyframes blinky1 {
-  99% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-@keyframes blinky2 {
-  49% {opacity: 0;}
-  50% {opacity: 1;}
-  90% {opacity: 1;}
 }

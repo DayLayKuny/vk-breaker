@@ -15,7 +15,7 @@
 
 .spn span {
     color: rgb(255, 0, 255);
-    font-family: "Press Start 2P";
+    font-family: 'Gilroy-Bold', sans-serif;
 }
 
 .spn {
@@ -38,7 +38,7 @@
 
 ol li {
     color: rgb(255, 0, 255);
-    font-family: "Press Start 2P";
+    font-family: 'Gilroy-Bold', sans-serif;
     padding: 10px;
 }
 

@@ -3,7 +3,7 @@ import "./loading.css";
 import Alert from "../alert/Alert";
 import App from "./nothing/loapp";
 import GreetingComponent from "./nothing/Console"
-
+  
 const Loading = () => {
   const [load, setLoad] = useState(true);
 
